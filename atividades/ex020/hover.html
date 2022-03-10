@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        /* div com o simbulo > siguinfica que o paragrafo dentro da div vai estar sujeito a função de dentro, no caso oculta.*/
+        div > p{
+            display: none;
+        }
+        /*div com : seguinifica que vai ter um status, um pseuda classe., ou seja no exemplo vai mostrar o texto escondido*/
+        div:hover > p{
+            display: block;
+            color: white;
+            background-color: brown;
+            width: 300px;
+        }
+        /* nesse exemplo quando passar a mão por cima da div vai ficar outra cor*/
+        div:hover{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>exemplo de hover</h1>
+    <p>passe o mouse sobre o texto a baixo</p>
+
+    <div>
+        passe levemente o mouse aqui
+        <p>texto escondido</p>
+    </div>
+    <p>fim do expemplo</p>
+</body>
+</html>

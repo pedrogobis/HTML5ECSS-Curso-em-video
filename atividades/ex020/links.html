@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links </title>
+    <style>
+        /*
+        SELETORES PERSONALIZADOS
+        ---------------------------------------------------------------
+        # = id= unico, usar uma vez só
+        . = class = pode usar mais vezes para varios elementos, definir toda uma classe 
+        : = pseudo-class = uma ação pra fazer na classe
+        :: = pseudo-elemento = colocar coisas antes ou depois, do já definido
+        > = clildren, filho = herda todas as carcteristicas da anterior 
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            }
+        a{ /*text-decoration: none tira a decoração sublinhada*/
+            color: aqua;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+        a:visited{
+            color: rgb(60, 71, 71);
+        }
+        a:hover{
+            color: brown;
+            text-decoration: overline;
+                       
+        }
+        li{
+            list-style: none;
+        }
+        a:active{
+            color: azure;
+        }
+        .especial::after{
+            content: '☚'; /*content é um conteudo que da pra colocar*/
+            text-decoration: none;
+            font-weight: normal;
+            color: blueviolet;
+        }
+       
+        .especial::before{
+            content: '☛';
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/" target="_blank">Repositorio GitHUB</a></li>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="especial">Confira no youtube</a></li>
+        <li><a href="https://www.duolingo.com/learn" target="_blank">Duo lingo</a></li>
+    </ul>
+
+    
+</body>
+</html>
