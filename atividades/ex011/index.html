@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em html</title>
+</head>
+<body>
+    <h1>IMAGEM DINAMICAS</h1>
+    <p>Teste abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/foto-m.png" type="image/png">
+
+        <img src="img/foto-g.png" alt="imagem flexivel">
+        <!--Para fazer a img dinamica sempre crie um padrão, ou começe pela menor ou pela maior, dentro da tag picture, e depois coloque sorce, que vai ser praticamente um if, se x resolução use y imagem
+        
+            *base e depois vai diminuindo a qualidade
+            *sempre mudar o min, pra max, e sempre saber o tamanho da foto
+            ** type sempre coloque o fomrato do arquivo.
+        
+        
+        -->
+    </picture>
+    <h1>Reproduzindo audio no html5</h1>
+    <p>segue ai</p>
+    <audio src="midia/ModernAttemptTrackTribe.mp3" controls ></audio>
+    <!--formatos aceitos MP3, WAV, OGG-->
+    <!--
+         Outra forma de importar audio, melhor e menos limitada
+        autoplay = começa sozinho
+        controls = disponibliza o controle do audio ao user
+        loop = a musica fica em loop.
+        preload = sempre metadata para carregar só o basico e nao o audio inteiro.
+
+        * mesma logica que da imagem, ele tenta importar o primeiro, se não deu certo, ela vai tentar importar o outro arquivo.
+
+        no exemplo, colocamos o ultimo caso, se caso o navegador não abrir nenhuma das 3 opçoes ele pode baixar o arquivo de audio.
+
+        colocar o audio entre as tags audio
+        
+        *formato wav é aceito, mas não recomendado, pois é o mais pesado de todos
+    -->
+    <audio preload="metadata"  controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.mp3" type="audio/ogg">
+        <source src="midia/guanacast-33.mp3" type="audio/wav">
+        <p>infelizmente seu navegador não foi capaz de reproduzir o audio <a href="midia/ModernAttemptTrackTribe.mp3">click aqui para baixar o podcast
+        </a></p>
+
+    </audio>
+
+
+</body>
+</html>

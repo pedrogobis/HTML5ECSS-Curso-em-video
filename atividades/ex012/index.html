@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trabalhando com videos</title>
+</head>
+<body>
+    <h1>trabalhando com videos.</h1>
+    <!--
+        mesmo lance que imagem, tenha varias imags iguais com formatos diferentes, pois dependendo o navegador não carrega.
+
+        tip: handbreak -> conversor de video gratuito com formatos para web, não vou baixar.
+
+        colocar o video na tag video é o jeito mais simples, porém não o correto.
+        
+        O correto é colocar entre a tag video dando mais opçoes 
+    -->
+    <p>inserindo videos hospedados localmente, no proprio servidor.</p>
+    <video src="midia/production ID_5077814.mp4" width="560" controls></video>
+
+    <video width="560" poster="img/tumb.png" controls>
+        <source src="midia/pexels-c-technical-6636083.mp4" type="video/mp4">
+        <source src="midia/pexels-c-technical-6636083.mp4" type="video/mp4">
+        <source src="midia/pexels-c-technical-6636083.mp4" type="video/ogg">
+        <p>seu navegador nao tem compatibilidade com os video, baixe-o <a href="midia/pexels-c-technical-6636083.mp4"></a></p>
+    </video>
+    <p>pegando videos de outros sites</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/obDnu7CwOmA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+</body>
+</html>
