@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+body{
+    background: #FFFF url("img/espaco.jpg") no-repeat right top fixed;
+}
+img{
+    text-align: center;
+    width: 500px;
+    margin: 120px 120px 120px 120px;
+}
+div{
+    text-align: center;
+}
