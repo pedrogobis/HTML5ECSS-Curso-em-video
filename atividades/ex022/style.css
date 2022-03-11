@@ -3,13 +3,28 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh; /*tamanho da view port*/
-    background-image: url('img/wallpaper002.jpg');
+    /*background-image: url('img/wallpaper002.jpg');
     background-color: black;
     background-position: center center;
-    /*cover daora de mais*/
+    /*cover daora de mais
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;*/
     margin: 0px;
+
+    /*
+    Shorthand do background fica assim =>
+
+    color> image> position> repeat> [size]> attachment
+
+    background: black url('img/wallpaper002.jpg') center center no-repeat cover fixed;
+    
+
+    funcionou igual, porém o parametro background-size ainda n é aceito.
+    */
+
+    background: black url('img/wallpaper002.jpg') center center no-repeat fixed;
+    background-size: cover;
 }
 
 header{
@@ -43,8 +58,15 @@ nav{
 
 main{
     background-color: white;
-    margin: 15px;
+    /*
+    Defini um padrão maximo
+    
+    Não tem necessidade de travar o minimo, pois vai se adaptar ao menor
+    */
+    max-width: 800px;
+    margin: auto;
     margin-top: 10px;
+    margin-bottom: 15px;
     padding: 15px;
     border-radius: 10px;
 
