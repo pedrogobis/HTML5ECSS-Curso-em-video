@@ -2,7 +2,13 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('img/wallpaper006.jpg');
+    height: 100vh; /*tamanho da view port*/
+    background-image: url('img/wallpaper002.jpg');
+    background-color: black;
+    background-position: center center;
+    /*cover daora de mais*/
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0px;
 }
 
