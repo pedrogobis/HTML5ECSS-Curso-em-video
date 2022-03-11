@@ -99,6 +99,38 @@ div#q3{
     background-image: url('img/pattern001.png');
 }
 
+#container{
+    background-image: url('img/target001.png');
+    /* background size com 100% 100% distorce a img para sempre ficar correto.*/
+    background-size: 100% 100%;
+    position: relative;
+    height: 96vh;
+    padding: 10px;
+    background-color: purple;
+    
+}
+
+#conteudo{
+    position: relative;
+    height: 200px;
+    width: 400px;
+    background-color: yellowgreen;
+    background-image: url('img/target001.png');
+    background-size: 100% 100%;
+    
+    
+    /*Top e left podem ser usados pois declaramos o position relative, então podemos manipular a posição da caixa
+    
+    podemos trabalhar com valores em porcentagem e pixels.
+    */
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+
+}   
+
 p{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
