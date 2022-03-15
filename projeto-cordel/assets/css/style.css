@@ -3,6 +3,11 @@
 *{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh; /*100% da entrada de video.*/
 }
 
 body{
@@ -17,6 +22,7 @@ header{
 
 header > h1{
     padding-top: 50px;
+    font-variant: small-caps;
 }
 
 header > p{
@@ -32,17 +38,27 @@ header a{
 main{
     background-color: white;
     color: black;
-    text-align: left;
+    
 }
 
-main p{
-    padding: 50px;
-    padding-bottom: 30px;
+section{
+    /* 10% DA ENTRADA DE VIDEO.*/
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    /*Espaçamento entre as linhas.*/
+    line-height: 2em;
+}
+
+.imagem > p{
+    /*defini uma largura da caixa.*/
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.438);
 }
 
 footer{
     background-color: black;
-    padding: 8px;
+    padding: 10px;
     color: white;
     text-align: center;
     
