@@ -109,12 +109,26 @@
             </p>
             <br>
 
+            <!--
+                Anatomia da tabela grande
+                TABLE
+                    CAPTION - DESCRICAO
+                    THEAD
+                        TR, TH, TD
+                    TBODY
+                        TR, TD, TH
+                    TFOOT
+                        TR, TD, TH
 
+
+
+            -->
            <table>
+               <caption>População das Unidades Federativas</caption>
                <thead>
                 <tr><!--Linha 1-->
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col">Estado</th><!--seguinifica que os dados estão embaixo.-->
+                    <th scope="col" style="width: 55px;">População</th>
                 </tr>
                </thead>
                <tbody>
@@ -140,7 +154,7 @@
                     <td class="numt">10 444 526</td>
                 </tr>
                 <tr>
-                    <td>Rio Grande do SUl</td>
+                    <td>Rio Grande do Sul</td>
                     <td class="numt">10 693 929</td>
                 </tr>
                 <tr>
@@ -230,7 +244,7 @@
                </tbody>
                <tfoot>
                     <tr>
-                        <th>Total de habitantes</th> 
+                        <th scope="row">Total de habitantes</th> <!--dados na frente dela-->
                         <td class="numt"><strong>214 360 601</strong></td>
                     </tr>
                </tfoot>

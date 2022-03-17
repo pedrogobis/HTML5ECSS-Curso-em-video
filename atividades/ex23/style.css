@@ -58,8 +58,15 @@ article{
     padding: 5px;
 }
 
+caption{
+    font-weight: bold;
+    font-size: 1.3em;
+    background-color: aliceblue;
+}
+
+
 table{
-    width: 400px;
+    width: 500px;
     height: 400px;
     border: 1px solid black;
     /*border colapse para grudar as caixas*/
@@ -75,7 +82,7 @@ td, th{
     border: 1px solid black;
     padding: 8px;
     /*Funciona aqui tbm*/
-    text-align: center;
+    text-align: left;
     /*Vertical align altura do item*/
     vertical-align: middle;
 }
