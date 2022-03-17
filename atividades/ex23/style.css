@@ -121,6 +121,9 @@ tbody>tr:nth-child(even){ /*2n*/
     background-color: rgba(255, 255, 255, 0.973);
 }
 
+.mescl  td{
+    text-align: center;
+}
 
 article> aside{
     inline-size: auto;
