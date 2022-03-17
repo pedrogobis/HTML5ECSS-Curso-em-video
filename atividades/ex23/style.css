@@ -61,11 +61,17 @@ article{
 table{
     width: 400px;
     height: 400px;
+    border: 1px solid black;
     /*border colapse para grudar as caixas*/
     border-collapse: collapse;
 }
 
-td{
+thead{
+    background-color: rgba(0, 0, 0, 0.842);
+    color: white;
+}
+
+td, th{
     border: 1px solid black;
     padding: 8px;
     /*Funciona aqui tbm*/
