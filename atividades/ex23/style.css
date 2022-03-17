@@ -99,13 +99,26 @@ td, th{
     text-align: left;
 }
 
+/*vamos travar os cabeçalhos*/
+.tabgrande{
+    position: relative;
+}
+
+thead > tr > th{
+    /* travando o cabeçalho no topo*/
+    position: sticky;
+    top: -1;
+    /*precisa colocar o background porque se n vai só o texto*/
+    background-color:rgba(0, 0, 0, 0.842);
+}
+
 /*Usando a pseu da calse nth-child, com o parametro 2n. de duas em duas ele coloca.
 poderia usar odd para impar, even para par*/
-tbody > tr:nth-child(odd){ /*2n-1*/
+tbody>tr:nth-child(odd){ /*2n-1*/
     background-color: lightgray;
 }
-tbody > tr:nth-child(even){ /*2n*/
-    background-color: rgba(216, 207, 218, 0.973);
+tbody>tr:nth-child(even){ /*2n*/
+    background-color: rgba(255, 255, 255, 0.973);
 }
 
 
@@ -120,6 +133,7 @@ article> aside{
 footer{
     text-align: center;
     background-color: azure;
+    font-weight: bold;
     margin: 0px;
     padding: 15px;
    
