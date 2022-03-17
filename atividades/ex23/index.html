@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <nav class="menu">
+        <a href="#tabela1">Tabela1</a>
+        <a href="#tabela2">Tabela2</a>
+    </nav>
+   </header>
+   <main>
+       <article>
+        <h1>Criando tabelas</h1>
+        <p>tabelas usamos apenas para mostrar dados, nada de utilizar para formatação de sites.</p>
+       </article>
+       <article>
+        <!--
+            Hierarquia de tabelas (simples)
+            TABLE = tabela
+                TABLE ROW = linha da tabela = <tr>
+                TABLE HEADER = CABEÇALHO DA TABELA
+                TABLE DATA = DADP TE TABELA
+
+
+            - No html 5 n é necessario fechar mais as tags:
+            tr e td, Porém pode acontecer varios errinhos chatos.
+        -->
+        <h2 id="tabela1">Tabela 1</h2>
+        <p>Segue aqui embaixo o exemplo te tabela simples, com hierarquia simples!</p>
+        <table>
+            <tr> <!--Linha 1-->
+                <td>a1</td><!--Dado da primeira coluna-->
+                <td>b1</td><!--Dado da segunda coluna-->
+                <td class="numt">c1</td><!--Dado da terceira coluna-->
+            </tr>
+            <tr class="linhapar"><!--Linha 2-->
+                <td>a2</td>
+                <td>b2</td>
+                <td class="nump">c2</td>
+            </tr>
+            <tr><!--Linha 3-->
+                <td>a3</td>
+                <td>b3</td>
+                <td class="numt">c3</td>
+            </tr>
+            <tr class="linhapar">
+                <td>a4</td>
+                <td>b4</td>
+                <td class="nump">c4</td>
+            </tr>
+            <tr>
+                <td>a5</td>
+                <td>b5</td>
+                <td class="numt">c5</td>
+            </tr>
+            <tr class="linhapar">
+                <td>a6</td>
+                <td>b6</td>
+                <td class="nump">c6</td>
+            </tr>
+            <tr>
+                <td>a7</td>
+                <td>b7</td>
+                <td class="numt">c7</td>
+            </tr>
+            <tr class="linhapar">
+                <td>a8</td>
+                <td>b8</td>
+                <td class="nump">c8</td>
+            </tr>
+            <tr>
+                <td>9A</td>
+                <td>9B</td>
+                <td class="numt">9C</td>
+            </tr>
+        </table>
+
+       </article>
+       <article>
+           <h2 id="tabela2">Tabela 2</h2>
+           <p>Exemplo de tabela um pouco mais complexo.</p>
+       </article>
+   </main>
+   <footer>
+       <p>#SOSK</p>
+   </footer>
+</body>
+</html>
