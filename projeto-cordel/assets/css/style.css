@@ -11,6 +11,7 @@
 
 html, body{
     min-height: 100vh; /*100% da entrada de video.*/
+    
 }
 
 body{
@@ -60,9 +61,21 @@ section{
     
 }
 
+section > p{
+    padding-bottom: 2em;
+}
+
 .normal > p{
     font-family: 'Sriracha';
 
+}
+
+section.imagem{
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.548);
+    /*estudar esse parametro também no projeto glfd*/
+    background-size: cover;
+    /*Fixou a img no fundo, para fazer o paralax*/
+    background-attachment: fixed;
 }
 
 .imagem > p{
@@ -72,7 +85,25 @@ section{
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.438);
     font-family: 'Sriracha';
+    text-shadow: 1px 1px 1px black;
 }
+
+#img01{
+    /* esqueci de que o css estava em uma pasta diferente então tinha que voltar uma pasta para acessar a img.*/ 
+    background-image: url('../imgs/background001.jpg');
+    /*Esqueci isso da ultima aula, preciso alterar meu projeto pra treinar.*/
+    background-position: right center;  
+    color: white;
+    
+    
+}
+
+#img02{
+    background-image: url('../imgs/background002.jpg');
+    color: white;
+}
+
+
 
 footer{
     background-color: black;
