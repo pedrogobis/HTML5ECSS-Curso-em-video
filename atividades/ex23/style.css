@@ -99,6 +99,14 @@ td, th{
     text-align: left;
 }
 
+/*Usando a pseu da calse nth-child, com o parametro 2n. de duas em duas ele coloca.
+poderia usar odd para impar, even para par*/
+tbody > tr:nth-child(odd){ /*2n-1*/
+    background-color: lightgray;
+}
+tbody > tr:nth-child(even){ /*2n*/
+    background-color: rgba(216, 207, 218, 0.973);
+}
 
 
 article> aside{
