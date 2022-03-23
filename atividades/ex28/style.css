@@ -73,7 +73,7 @@ table{
     border-collapse: collapse;
 }
 
-thead{
+thead, th{
     background-color: rgba(0, 0, 0, 0.842);
     color: white;
 }
@@ -81,8 +81,9 @@ thead{
 td, th{
     border: 1px solid black;
     padding: 8px;
+    font-weight: bold;
     /*Funciona aqui tbm*/
-    text-align: left;
+    text-align: center;
     /*Vertical align altura do item*/
     vertical-align: middle;
 }
@@ -112,26 +113,7 @@ thead > tr > th{
     background-color:rgba(0, 0, 0, 0.842);
 }
 
-/*Usando a pseu da calse nth-child, com o parametro 2n. de duas em duas ele coloca.
-poderia usar odd para impar, even para par*/
-tbody>tr:nth-child(odd){ /*2n-1*/
-    background-color: lightgray;
-}
-tbody>tr:nth-child(even){ /*2n*/
-    background-color: rgba(255, 255, 255, 0.973);
-}
 
-.mescl  td{
-    text-align: center;
-}
-
-article> aside{
-    inline-size: auto;
-    background-color: rgba(167, 193, 211, 0.479);
-    padding: 5px;
-    padding: 1px 1px 1px 1px;
-
-}
 
 footer{
     text-align: center;
@@ -146,9 +128,13 @@ footer > p{
     margin: 0px;
 
 }
+col.cnome{
+    background-color: azure;
+}
+col.csexo{
+    background-color: rgba(165, 42, 42, 0.658);
+}
 
-
-/* cria uma barra de rolagem dentro da tabela, e não na pagina inteira */
-#container{
-    overflow-x: auto;
+col.cprof{
+    background-color: rgba(66, 66, 143, 0.432);
 }
