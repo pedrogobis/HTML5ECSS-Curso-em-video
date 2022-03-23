@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <nav class="menu">
+        <a href="#tabela1">Tabela 1</a>
+        <a href="#tabela2">Tabela 2</a>
+        <a href="#tabela3">Tabela 3</a>
+    </nav>
+   </header>
+   <main>
+       <article>
+       
+       </article>
+       <article>
+        <h2 id="tabela1">Notas, materias e medias</h2>
+        <p>Segue aqui embaixo o exemplo te tabela com o boletim</p>
+        <table>
+            <caption>
+                Notas e materias
+            </caption>
+            <!--COLSPAN E ROWSPAN SÓ EXPANDEM DEPOIS QUE VC INSERE OS DADOS ENTÃO VA FAZENDO LINHA POR LINHA.
+            
+            Para titulos sempre usar o TH
+            ATÉ EM OUTRAS LINAHS
+            
+            -->
+            <thead>
+                <th scope="col">Area</th>
+                <th scope="col">Disciplinas</th>
+                <!--COLGROUP É PARA MOSTRAR OS DADOS EMBAIXO DELE QUANDO ELE ESTA MESCLADO-->
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th colspan="2" scope="col">Média</th>
+            </thead>
+
+            <tr>
+                <td scope="col">Nota 1</td>
+                <td scope="col">Nota 2</td>
+            </tr>
+
+            <tr>
+                 <!--ROWGROUP É PARA MOSTRAR OS DADOS AO LADO DELE QUANDO ELE ESTA MESCLADO-->
+                <th rowspan="4" scope="rowgroup" >Exatas</th>
+                <td scope="row">Matematica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td scope="row">Fisica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                
+                <td scope="row">Quimica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                
+                <td scope="row">Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>        
+            <tr>
+                <th colspan="4" scope="row">Media de Exatas</th>
+                <th>0.0</th>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td scope="row">Historia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                
+            </tr>
+            <tr>
+                
+                <td scope="row">Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+             <tr>
+                  <!-- os dados dele estão ao lado então apenas row-->
+                 <th colspan="4" scope="row">Media de Humanas</th>
+                 <th>0.0</th>
+             </tr>
+        </table>
+
+       </article>
+       <article>
+         
+
+       </article>
+       <article>
+           
+       </article>
+   </main>
+   <footer>
+       <p>#SOSK</p>
+   </footer>
+</body>
+</html>
